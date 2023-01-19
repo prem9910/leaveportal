@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Leave Portal</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- <link href="date-time-picker-component.min.css" rel="stylesheet"> -->
+  <!-- <link href="demo.css" rel="styleshee	t"> -->
+<!-- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+</head>
+<body>
+<div class="row" style="justify-content: center;">
+<div class="title">
+	<div class="col-25" style="width:auto; margin-left:80px;">
+		<img src="./image/logo.png">
+	</div>
+		
+	
+	<div class="col-75" style="margin-top:10px;text-align:center;font-size:27px;">
+		
+		<h1>National Skill Training Institute</h1>
+		<p>Bengaluru</p>
+	</div>
+</div>
+</div>
+
+
+<div class="container">
+	<div class="frmtitle">
+	<h1>Leave Application</h1>
+	<p>Please fill in the form below if you need to leave work. All leave applications need to be approved by both the applicant and the manager.</p>
+</div>
+	<form action="form.php" target="_blank"   method="POST" name="myForm">
+		<div class="row">
+			<div class="col-75">
+				<label for="fname">Faculty Name</label><span style="color: red;">*</span>
+				<input type="text" id="fname" name="fullname" placeholder="Full Name">
+				<span class="error" id="name_error"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<label >Email</label><span style="color: red;">*</span>
+				<input type="text" id="email" name="email" placeholder="E-Mail">
+				<span class="error" id="email_error"></span>
+			</div>
+			<div class="col-25" >
+				<label>Mobile Number</label><span style="color: red;">*</span>
+				<input type="text" id="phn_no" name="phone_no" placeholder="### ### ####">
+				<span class="error" id="phn_error"></span>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-25">
+				<label>Designation</label><span style="color: red;">*</span>
+				<select id="dgnation" name="dgnation">
+                    <option>Trade Officer</option>
+                    <option>Assistent</option>
+                </select>
+                <span class="error" id="dgnation_error"></span>
+			</div>
+			<div class="col-25" >
+				<label >Type of Leave</label><span style="color: red;">*</span>
+				<select id="leave_typ" name="leave_typ">
+					<option>Casual Leave</option>
+					<option>Emergency Leave</option>
+					<option>Medical Leave</option>
+					<option>Other</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="">
+				<label>Reason for Leave</label><span style="color: red;">*</span>
+				<textarea id="reason" name="reason" placeholder="Write something.." style="height:75px; width:98%; "></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-75">
+				<label>Leave Date : </label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<span style="margin: 6px; ">Start</span><input class="date" id="sdate" type="date" name="sdate" >
+
+			</div>
+			<div class="col-25">
+				<span style="margin:6px ">End</span><input class="date" type="date" id="edate" name="edate">
+			</div>
+			
+		</div>
+		<div class="row" style="padding:20px 42%;">
+			
+			
+				<input type="submit" style="float:left; " onclick="return validateForm()" value="Apply Leave" name="submit">
+				
+			
+		</div>
+		
+	</form>
+</div>
+
+
+<!-- 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  --> 
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
